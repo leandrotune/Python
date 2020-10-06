@@ -1,0 +1,17 @@
+
+grupo1 = ('tabela', 'flamengo', 'Santos', 'Palmeiras', 'Glêmio', 'Athletico-PR')
+grupo2 = ('São Paulo', 'Internacional', 'corinthians', 'fortaleza', 'goiáis')
+grupo3 = ('bahia', 'vasco da gama', 'atlético- MG', 'fluminense', 'botafogo')
+grupo4 = ('ceára SC', 'cruzeiro', 'CSA', 'chapecoense', 'avaí')
+brasileirao = (grupo1 + grupo2 + grupo3 + grupo4)
+print('=' * 150)
+print(f'\033[1:34mlista de times do brasileirão:\033[m {brasileirao}')
+print('=' * 150)
+print(f'\033[1:31mos 5 primeiros são:\033[m {grupo1[1:]}')
+print('=' * 150)
+print(f'\033[1:32mos ultimos 4 colocados são:\033[m {grupo4[1:]}')
+print('=' * 150)
+print(f'\033[1:33mTimes em ordem alfabética:\033[m {sorted(brasileirao)}')
+print('=' * 150)
+print('O chapecoense está na {} posição'.format(brasileirao.index('chapecoense')))
+
